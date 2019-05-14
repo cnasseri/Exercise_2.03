@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#" th:action="@{/employeeform}" th:object="${employee}"
+      method="post">
+    firstName: <input type="text" th:field="*{firstName}" /><br />
+    lastName: <input type="text" th:field="*{lastName}" /><br />
+    SSN: <input type="number" th:field="*{SSN}" /><br />
+    DOB: <input type="date" th:field="*{DOB}" /><br />
+    <input type="submit" value="Submit" />
+</form>
+</body>
+</html>
